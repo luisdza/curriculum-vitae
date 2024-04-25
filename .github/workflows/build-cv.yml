@@ -7,8 +7,12 @@ on:
   # events but only for the main branch
   push:
     branches: [ "main" ]
+    paths:
+      - '*.Rmd'
   pull_request:
     branches: [ "main" ]
+    paths:
+      - '*.Rmd'
   # Also allows running the workflow manually from the GitHub Actions UI
   workflow_dispatch:
 
