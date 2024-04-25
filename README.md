@@ -1,11 +1,15 @@
 # Curriculum Vitae Project
 
 ## Overview
-This project is designed to create and maintain a professional Curriculum Vitae (CV), resume, and cover letter using the R programming language. It utilises the `vitae` library and the `vitae::awesomecv` template to format these documents beautifully and leverages GitHub Actions for automated builds, ensuring that the latest versions of the documents are always available.
+This project is designed to create and maintain a professional Curriculum Vitae (CV), resume, and cover letter using the R programming language. It utilises the `vitae` library and the `vitae::awesomecv` template to format these documents beautifully and leverages GitHub Actions for automated builds, ensuring that the latest versions of the documents are always available. You can download them directly from the following links:
+
+* Luis de Sousa's CV: [Download CV](https://github.com/luisdza/curriculum-vitae/raw/main/cv.pdf)
+* Luis de Sousa Resume: [Download Resume](https://github.com/luisdza/curriculum-vitae/raw/main/resume.pdf)
+* Luis de Sousa Cover Letter: [Download Cover Letter](https://github.com/luisdza/curriculum-vitae/raw/main/cover-letter.pdf)
 
 ## Prerequisites
 Before you begin, ensure you have the following installed:
-*	[R](https://cran.r-project.org/) and [RStudio]([https://posit.co/](https://posit.co/download/rstudio-desktop/))
+*	[R](https://cran.r-project.org/) and [RStudio](https://posit.co/download/rstudio-desktop/)
 * The `vitae` package and other required packages. Install them using the following command in R:
 ```R
 install.packages("vitae", dependencies = TRUE)
