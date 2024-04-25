@@ -57,3 +57,14 @@ tribble(
 ) |>
   detailed_entries(role, dates, company, loc, details)
 ```
+
+# Presentations
+
+```{r presentations}
+tribble(
+  ~ title, ~ loc, ~ date,
+  "Building a RAG Application with Azure OpenAI and Microsoft Fabric", "Data and AI Community Day Johannesburg", "2024-04-09",
+  "Deploying a LLM with Vector Search in Databricks", "AI/ML and Data Infusion Roadshow Durban", "2023-11-11",
+  "Gently Exploring the Azure Databricks Lakehouse", "Data Saturday Cape Town, Durban and Johannesburg 2023", "2023-09-30") |>
+  detailed_entries(title, date, loc, .protect=FALSE)
+```

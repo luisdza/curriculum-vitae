@@ -9,6 +9,7 @@ email: "luisd@syeop.co.za"
 twitter: luis_de_sousa
 github: luisdza
 linkedin: luisdza
+sessionize: luis-de-sousa
 date: "`r format(Sys.time(), '%B %Y')`"
 docname: "CV"
 output:
@@ -65,13 +66,6 @@ tribble(
   detailed_entries(degree, dates, uni, loc, details)
 ```
 
-```{r presentations}
-#tribble(
-#  ~ title, ~ loc, ~ date,
-#  "Databricks for R developers", "Johannesburg R User Group", "2013-05-04") %>% 
-#  detailed_entries(title, date, "" , loc)
-```
-
 # Community
 
 ```{r community}
@@ -82,6 +76,23 @@ tribble(
 ) |>
   detailed_entries(role, dates, company, loc, details)
 ```
+
+# Presentations
+
+```{r presentations}
+tribble(
+  ~ title, ~ loc, ~ date,
+  "Building a RAG Application with Azure OpenAI and Microsoft Fabric", "Data and AI Community Day Johannesburg", "2024-04-09",
+  "Deploying a LLM with Vector Search in Databricks", "AI/ML and Data Infusion Roadshow Durban", "2023-11-11",
+  "Gently Exploring the Azure Databricks Lakehouse", "Data Saturday Cape Town 2023", "2023-09-30",
+  "Gently Exploring the Azure Databricks Lakehouse", "Data Saturday Durban 2023", "2023-08-19",
+  "Gently Exploring the Azure Databricks Lakehouse", "Data Saturday Johannesburg 2023", "2023-08-05",
+  "Key Insights for Data Scientists from Microsoft Build", "Johannesburg R User Group", "2023-06-13",
+  "Databricks for R developers", "Johannesburg R User Group", "2023-05-09") |>
+  detailed_entries(title, date, loc, .protect=FALSE)
+```
+
+\newpage
 
 # Open Source
 
@@ -119,7 +130,7 @@ tribble(
   "Implementing Data Protection on Dell Storage - IDPDS", "Dell", "2004-12-08", TRUE,
   "Implementing Dell Enterprise Storage Solutions - IDESS", "Dell", "2004-12-06", TRUE,
   #"Microsoft Licensing Specialist", "Microsoft", "2004-05-01", TRUE,
-  "ITIL Foundation Course (IT Service Management)", "ITSM", "2004-07-01", FALSE
+  #"ITIL Foundation Course (IT Service Management)", "ITSM", "2004-07-01", FALSE
   ) |>
   brief_entries(title, year(date), organisation)
 ```
