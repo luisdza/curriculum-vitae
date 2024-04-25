@@ -1,0 +1,59 @@
+---
+name: Luis
+surname: de Sousa
+position: "Data and Analytics Consultant"
+#pronouns: he/him
+address: "Johannesburg, South Africa"
+#www: www.growinconsultation.com
+email: "luisd@syeop.co.za"
+twitter: luis_de_sousa
+github: luisdza
+linkedin: luisdza
+date: "`r format(Sys.time(), '%B %Y')`"
+docname: "Resume"
+output:
+  vitae::awesomecv:
+    page_total: true
+profilepic: luisdza-headshot.png
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(vitae)
+library(lubridate)
+library(tibble)
+```
+
+# Profile
+
+With 16 years of experience in data and analytics consulting, I specialise in designing and building tailored data solutions for large organisations. My expertise spans data warehousing, integration, analysis, visualisation, and deployment in production environments. Additionally, I excel in leading cross-functional teams in dynamic settings. I firmly believe in the power of technology to drive sustainable change and am passionate about problem-solving and fostering collaboration and transparency. I take pride in finding unique and practical solutions to challenges. Outside work, my interests include reading, exercising (CrossFit and running), dancing, exploring note-taking systems, and co-organising user groups.
+
+# Work
+
+```{r work}
+tribble(
+  ~ role, ~ company, ~ loc, ~ dates, ~ details,
+  "Principal Consultant: Data and Analytics & Director", "Syeop", "Johannesburg, South Africa", "May. 2007 - Present", "I lead high-impact data and analytics initiatives across diverse sectors such as real estate, food and beverage, and banking. My managerial responsibilities encompass prospecting, negotiating, and overseeing business and project management. Additionally, I contribute to team development by recruiting, training, and mentoring staff. My technical expertise includes market analysis, consolidating financial data on cloud platforms, forecasting, and developing Management Information Systems (MIS) architectures. I have worked with various technologies in these projects, such as the Microsoft Data Platform, MySQL, Google BigQuery, Azure Databricks, and FiveTran. I am proficient in SQL, R, and Python.") |>
+  detailed_entries(role, dates, company, loc, details)
+```
+
+# Education
+
+```{r}
+tribble(
+  ~ degree, ~ uni, ~ loc, ~ dates, ~ details,
+  "Master of Engineering (MEng) in Software and Information Engineering", "Wits", "Johannesburg, South Africa", "2015", 
+    list("Investigation Report: Using agile principles during software procurement in build versus buy decision-making.")) |>
+  detailed_entries(degree, dates, uni, loc, details)
+```
+
+# Community
+
+```{r community}
+tribble(
+  ~ role, ~ company, ~ dates, ~ loc, ~ details,
+  "Co Organiser", "Johannesburg R User Group", "2018 to current", "Johannesburg, South Africa", "This group serves as a platform for sharing knowledge, networking, and promoting the use of R in various statistical, data analysis, and programming endeavors within the Johannesburg area. https://www.rusergroup.co.za",
+  "Co Organiser", "PyData Johannesburg ", "Starting Feb 2023", "Johannesburg, South Africa", "This local chapter of an international initiative focuses on nurturing community growth and engagement through Python and data science topics tailored to Johannesburg. https://www.pydata.co.za",
+) |>
+  detailed_entries(role, dates, company, loc, details)
+```
