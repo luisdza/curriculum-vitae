@@ -59,6 +59,11 @@ jobs:
         run: rmarkdown::render("resume.Rmd")
         shell: Rscript {0}
 
+      # Knit Resume R Markdown to PDF
+      - name: Knit Cover letter R Markdown to PDF
+        run: rmarkdown::render("cover-letter.Rmd")
+        shell: Rscript {0}
+
       # Upload PDF
       - name: Upload PDF
         run: |
