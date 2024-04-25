@@ -1,0 +1,14 @@
+Package: curriculum-vitae
+Title: Luis de Sousa Curriculum Vitae
+Version: 1.0.0.0000
+Authors@R: c(
+  person("Luis", "de Sousa", , "luisd@syeop.co.za", c("aut", "cre"))
+  )
+URL: https://github.com/luisdza/curriculum-vitae
+Depends: 
+    R (>= 4.3.3)
+Imports: 
+    vitae,
+    lubridate,
+    tibble,
+    tinytex
