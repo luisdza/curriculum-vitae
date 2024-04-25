@@ -1,7 +1,7 @@
 # Curriculum Vitae Project
 
 ## Overview
-This project is designed to create and maintain a professional Curriculum Vitae (CV), resume, and cover letter using the R programming language. It utilises the vitae library to format these documents beautifully and leverages GitHub Actions for automated builds, ensuring that the latest versions of the documents are always available.
+This project is designed to create and maintain a professional Curriculum Vitae (CV), resume, and cover letter using the R programming language. It utilises the `vitae` library and the `vitae::awesomecv` template to format these documents beautifully and leverages GitHub Actions for automated builds, ensuring that the latest versions of the documents are always available.
 
 ## Prerequisites
 Before you begin, ensure you have the following installed:
