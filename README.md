@@ -1,42 +1,48 @@
-# Curriculum-Vitae
+# Curriculum Vitae Project
 
-This repository contains the source code for my curriculum vitae (CV) built using the R programming language with the vitae package. The vitae package provides a collection of LaTeX templates specifically designed to create CVs beautifully and easily directly from R Markdown files.
+## Overview
+This project is designed to create and maintain a professional Curriculum Vitae (CV), resume, and cover letter using the R programming language. It utilises the vitae library to format these documents beautifully and leverages GitHub Actions for automated builds, ensuring that the latest versions of the documents are always available.
 
-# Project Structure
-* **cv.Rmd**: The main R Markdown file where the CV is written. It includes YAML front-matter for configurations and Markdown mixed with LaTeX for detailed entries.
-* **cv.pdf**: The output CV file is in PDF format and was generated from the R Markdown file.
-
-# Prerequisites
-Before you can build the CV on your local machine, ensure you have the following installed:
-* R
-* RStudio (optional but helpful for editing R Markdown files)
-* LaTeX (required for PDF generation)
-
-# Building the CV
-To build the CV to a PDF file, you can use the following R command:
-
+## Prerequisites
+Before you begin, ensure you have the following installed:
+*	R and RStudio
+* The `vitae` package and other required packages. Install them using the following command in R:
 ```R
-rmarkdown::render("cv.Rmd") 
+install.packages("vitae", dependencies = TRUE)
 ```
 
-This command will compile the R Markdown document into a PDF using LaTeX.
+## Project Structure
+* **cv.Rmd**: R Markdown file is used to create the Curriculum Vitae.
+* **resume.Rmd**: R Markdown file is used to create a concise resume.
+* **cover-letter.Rmd**: R Markdown file is used to create a cover letter.
 
-# Automating Build with GitHub Actions
-This project uses GitHub Actions to automate the building of the CV. Whenever changes are pushed to the repository, GitHub Actions will run a workflow that executes the build process and updates the **cv.pdf** file.
+Each of these files can be customised with personal information and professional details to generate PDFs or HTML documents.
 
-# Workflow
-The **.github/workflows/build_cv.yml** file contains the GitHub Actions workflow configuration. Here's what it does:
-1. Set up R environment.
-2. Install the required R packages.
-3. Build the CV using R Markdown.
-4. Commit the updated **cv.pdf** back to the repository if there are changes.
+## Getting Started
+1. Clone the repository:
+```bash
+git clone https://github.com/luisdza/curriculum-vitae.git
+``` 
+2. Open the RStudio project file curriculum-vitae.Rproj.
+3. Modify cv.Rmd, resume.Rmd, and cover-letter.Rmd with your details.
+4. Render the documents locally using RStudio or use you can use the following R commands:
 
-# Usage
-To use this repository for your CV:
-1. Fork the repository.
-2. Clone your forked repository to your local machine.
-3. Make your changes to the **cv.Rmd** file.
-4. Push your changes back to GitHub to trigger the GitHub Actions workflow.
+```R
+rmarkdown::render("cv.Rmd")  # Generate only the CV
+rmarkdown::render("resume.Rmd")  # Generate only the resume
+rmarkdown::render("cover-letter.Rmd") # Generate only the cover letter 
+```
 
-# License
-This project is open-sourced under the MIT License.
+## Automation with GitHub Actions
+The project uses GitHub Actions to automatically build the PDFs or HTML documents whenever changes are pushed to the repository. The workflow is defined in `.github/workflows/build.yml`, which installs necessary R dependencies, renders the R Markdown files, and pushes the output files back to the repository or another specified location.
+
+## Notes on Markdown Files
+* `cv.Rmd`: Tailor this file with sections like education, experience, skills, etc. The vitae package will help format these sections.
+* `resume.Rmd`: A more concise version of your CV, focusing on the most important achievements.
+* `cover-letter.Rmd`: Includes placeholders for the job application specifics. Customise this document for each job application to address the particular requirements and how your skills and experiences align with them.
+
+## Contributing
+Contributions to this project are welcome! Feel free to fork the repository, make changes, and submit a pull request.
+
+## License
+This project is open-source and available under the MIT License.
