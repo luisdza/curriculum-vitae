@@ -10,7 +10,7 @@ twitter: luis_de_sousa
 github: luisdza
 linkedin: luisdza
 date: "`r format(Sys.time(), '%B %Y')`"
-docname: "Resume"
+docname: "CV"
 output:
   vitae::awesomecv:
     page_total: true
@@ -61,7 +61,7 @@ tribble(
 tribble(
   ~ degree, ~ uni, ~ loc, ~ dates, ~ details,
   "Master of Engineering (MEng) in Software and Information Engineering", "Wits", "Johannesburg, South Africa", "2015", 
-    list("Investigation Report: Using agile principles during software procurement in build versus buy decision-making.")) %>% 
+    list("Investigation Report: Using agile principles during software procurement in build versus buy decision-making.")) |>
   detailed_entries(degree, dates, uni, loc, details)
 ```
 

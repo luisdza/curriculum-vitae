@@ -1,57 +1,73 @@
-# This is a basic workflow to help you get started with Actions
-
+# Name of the workflow
 name: CI
 
-# Controls when the workflow will run
+# Events that trigger the workflow
 on:
-  # Triggers the workflow on push or pull request events but only for the "main" branch
+  # Trigger the workflow on push or pull request
+  # events but only for the main branch
   push:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-
-  # Allows you to run this workflow manually from the Actions tab
+  # Also allows running the workflow manually from the GitHub Actions UI
   workflow_dispatch:
 
-  # Sets permissions of the GITHUB_TOKEN to allow deployment
+# Permissions for the workflow
 permissions:
+  # Allows the workflow to write to the repository
   contents: write
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+# Define jobs
 jobs:
-  # This workflow contains a single job called "build"
+  # Job for building the CV
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      # Checks-out your repository under $GITHUB_WORKSPACE
       - uses: actions/checkout@v3
 
+      # Setup Pandoc
       - name: Setup Pandoc
         uses: r-lib/actions/setup-pandoc@v2
 
+      # Setup R
       - name: Setup R
         uses: r-lib/actions/setup-r@v2
         with:
+          # Use public RSPM
           use-public-rspm: true
 
+      # Install R Dependencies
       - name: Install R Dependencies
         uses: r-lib/actions/setup-r-dependencies@v2
 
+      # Install Tinytex
       - name: Install Tinytex
         run: tinytex::install_tinytex()
         shell: Rscript {0}
 
-      - name: Knit R Markdown to PDF
+      # Knit CV R Markdown to PDF
+      - name: Knit CV R Markdown to PDF
         run: rmarkdown::render("cv.Rmd")
         shell: Rscript {0}
 
+      # Knit Resume R Markdown to PDF
+      - name: Knit Resume R Markdown to PDF
+        run: rmarkdown::render("resume.Rmd")
+        shell: Rscript {0}
+
+      # Upload PDF
       - name: Upload PDF
         run: |
+          # Configure git user
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
-          git add cv.pdf
-          git commit -am "add the cv.pdf to the repository"
+          # Add generated PDFs to git
+          git add *.pdf
+          # Commit the changes
+          git commit -am "add the generated pdfs to the repository"
+          # Push the changes
           git push
