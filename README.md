@@ -5,7 +5,7 @@ This project is designed to create and maintain a professional Curriculum Vitae 
 
 ## Prerequisites
 Before you begin, ensure you have the following installed:
-*	R and RStudio
+*	[R](https://cran.r-project.org/) and [RStudio]([https://posit.co/](https://posit.co/download/rstudio-desktop/))
 * The `vitae` package and other required packages. Install them using the following command in R:
 ```R
 install.packages("vitae", dependencies = TRUE)
