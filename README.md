@@ -38,7 +38,7 @@ rmarkdown::render("cover-letter.Rmd") # Generate only the cover letter
 ```
 
 ## Automation with GitHub Actions
-The project uses GitHub Actions to automatically build the PDFs or HTML documents whenever changes are pushed to the repository. The workflow is defined in `.github/workflows/build.yml`, which installs necessary R dependencies, renders the R Markdown files, and pushes the output files back to the repository or another specified location.
+The project uses GitHub Actions to automatically build the PDFs or HTML documents whenever changes are pushed to the repository. The workflow is defined in `.github/workflows/build-cv.yml`, which installs necessary R dependencies, renders the R Markdown files, and pushes the output files back to the repository or another specified location.
 
 ## Notes on Markdown Files
 * `cv.Rmd`: Tailor this file with sections like education, experience, skills, etc. The vitae package will help format these sections.
