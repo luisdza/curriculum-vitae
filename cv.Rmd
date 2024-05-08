@@ -6,6 +6,7 @@ position: "Data and Analytics Consultant"
 address: "Johannesburg, South Africa"
 #www: www.growinconsultation.com
 email: "luisd@syeop.co.za"
+phone: "tel:+27835908454"
 twitter: luis_de_sousa
 github: luisdza
 linkedin: luisdza
@@ -27,19 +28,32 @@ library(tibble)
 
 # Profile
 
-With 16 years of experience in data and analytics consulting, I specialise in designing and building tailored data solutions for large organisations. My expertise spans data warehousing, integration, analysis, visualisation, and deployment in production environments. Additionally, I excel in leading cross-functional teams in dynamic settings. I firmly believe in the power of technology to drive sustainable change and am passionate about problem-solving and fostering collaboration and transparency. I take pride in finding unique and practical solutions to challenges. Outside work, my interests include reading, exercising (CrossFit and running), dancing, exploring note-taking systems, and co-organising user groups.
+With 17 years of experience in data and analytics consulting, I specialise in designing and building tailored data solutions for large organisations. My expertise spans data warehousing, integration, analysis, visualisation, and deployment in production environments. Additionally, I excel in leading cross-functional teams in dynamic settings. I firmly believe in the power of technology to drive sustainable change and am dedicated to problem-solving and fostering collaboration and transparency. I take pride in finding unique and practical solutions to challenges. Outside work, my interests include reading, exercising (CrossFit and running), dancing, exploring note-taking systems, and co-organising user groups.
 
-# Work
+# Professional Experience
 
-```{r work}
+```{r professional-experience}
 tribble(
   ~ role, ~ company, ~ loc, ~ dates, ~ details,
-  "Principal Consultant: Data and Analytics & Director", "Syeop", "Johannesburg, South Africa", "May. 2007 - Present", "I lead high-impact data and analytics initiatives across diverse sectors such as real estate, food and beverage, and banking. My managerial responsibilities encompass prospecting, negotiating, and overseeing business and project management. Additionally, I contribute to team development by recruiting, training, and mentoring staff. My technical expertise includes market analysis, consolidating financial data on cloud platforms, forecasting, and developing Management Information Systems (MIS) architectures. I have worked with various technologies in these projects, such as the Microsoft Data Platform, MySQL, Google BigQuery, Azure Databricks, and FiveTran. I am proficient in SQL, R, and Python.",
-  "Support & Development Consultant", "Cyest Corporation", "Johannesburg, South Africa", "August 2004 - April 2007", "Before DevOps emerged, I served as a deployment automation engineer. I designed, developed, and managed a custom SQL replication framework using SSIS in this capacity. My responsibilities also included overseeing system upgrades, providing technical support, and implementing additional integrations. Throughout these projects, I extensively utilised Microsoft Data Platform and Microsoft BizTalk technologies.",
-  "IT Professional Consultant", "Artec Computer Systems", "Johannesburg, South Africa", "July 2002 - July 2004", "My role involved providing technical support for applications, desktops, networks, and servers primarily in Microsoft environments. This included working with Microsoft technologies such as Windows 98, NT4, 2000, and 2003, as well as MS SQL Server and Exchange in clustered configurations. Beyond Microsoft technologies, I managed Cisco's LAN, WAN, and VOIP systems, worked with Interactive Voice Response (IVR) technologies, and maintained Dell & EMC hardware."
+  "Principal Consultant and Director", "Syeop", "Johannesburg, South Africa", "May. 2007 - Present", "I lead high-impact data and analytics initiatives across diverse sectors such as real estate, food and beverage, and banking. My managerial responsibilities encompass prospecting, negotiating, and overseeing business and project management. Additionally, I contribute to team development by recruiting, training, and mentoring staff. My technical expertise includes market analysis, consolidating financial data on cloud platforms, forecasting, and developing Management Information Systems (MIS) architectures.",
+  "Support & Development Consultant", "Cyest Corporation", "Johannesburg, South Africa", "August 2004 - April 2007", "Before DevOps emerged, I served as a deployment automation engineer. I designed, developed, and managed a custom SQL replication framework using SSIS in this capacity. My responsibilities also included overseeing system upgrades, providing technical support, and implementing additional integrations.",
+  "IT Professional Consultant", "Artec Computer Systems", "Johannesburg, South Africa", "July 2002 - July 2004", "My role involved providing technical support for applications, desktops, networks, and servers primarily in Microsoft environments. Beyond Microsoft technologies, I managed Cisco's LAN, WAN, and VOIP systems, worked with Interactive Voice Response (IVR) technologies, and maintained Dell & EMC hardware."
 ) |>
   detailed_entries(role, dates, company, loc, details)
 ```
+
+# Skills
+
+```{r skills}
+tribble(
+  ~ skill, ~subtitle, ~ details,
+  "Data Engineering and Analytics Expertise", "Architecting End-to-End Data Systems", list("Proficient in designing and implementing robust data solutions, including data warehousing, integration, and analytics.", "Skilled in using SQL, R, Python, Microsoft Data Platform, Azure DevOps, MySQL, Google BigQuery, Databricks, Github Actions and FiveTran.", "Experienced in financial data consolidation, market analysis, and forecasting."),
+  "Project Leadership and Management", "Leading Cross-Functional Teams in Dynamic Settings", list("Demonstrated ability to lead high-impact data and analytics projects across diverse sectors like real estate, food and beverage, and banking.", "Expert in overseeing project scopes, timelines, and deliverables while mentoring and training cross-functional teams.", "Effective in stakeholder management, negotiating contracts, and driving team performance."),
+  "Community Engagement and Thought Leadership", "Leading Cross-Functional Teams in Dynamic Settings", list("Actively involved in co-organising local data science communities, including Johannesburg R User Group and PyData Johannesburg.", "Regular presenter at conferences, sharing insights on data analytics, machine learning, and cloud technologies.", "Contributor to open-source projects, enhancing knowledge sharing and collaboration within the tech community.")) |>
+  detailed_entries(what= subtitle, with = skill, why = details)
+```
+
+\newpage
 
 # Consulting Projects
 
@@ -48,9 +62,9 @@ tribble(
   ~ role, ~ company, ~ dates, ~ details,
   "Data Capacity Services", "Real Estate", "2024", "As a senior data consultant, I created data structures that allowed researchers to analyse South Africa's property markets for the CityMark report. I used MSSQL for data management and R for spatial analysis to generate insights across national and metropolitan areas.",
   "Consolidated Financial Warehouse","Real Estate", "2023", "As part of a two-person senior consulting team, we created and implemented a unified overview of the company's financial performance across all its entities. We used financial systems like Xero, JDE, and LOB applications. For this project, we employed FiveTran for data integration, BigQuery for data storage and analytics, Looker Studio for data visualisation, and Google Sheets for data sharing and collaboration.",
-  "Databricks Proof of Value","International Chain", "2023", "As a senior consultant in a two-person team, I co-engineered and implemented a Databricks solution in the cloud for both development and production environments. This project involved using technologies such as Azure Databricks, Azure Data Lake Storage Gen2, Azure DevOps, KeyVault, Data Factory, and PowerBI.",
+  "Databricks Proof of Value","Health and Fitness", "2023", "As a senior consultant in a two-person team, I co-engineered and implemented a Databricks solution in the cloud for both development and production environments. This project involved using technologies such as Azure Databricks, Azure Data Lake Storage Gen2, Azure DevOps, KeyVault, Data Factory, and PowerBI.",
   "Forecasting Capability Building", "Food and Beverage", "2021-2022", "As the project lead and senior consultant on a two-person team, we developed and implemented an automated statistical forecasting system for SKUs within a valuable supply chain. For this initiative, we used R and Microsoft SQL Server.",
-    "MIS Solutions Architecture", "Banking - Innovation Division", "2010-2020", "As the lead and senior consultant for a five-person team in the innovation business unit, I managed all Management Information. My responsibilities included reporting and analytics for various payment systems like domestic and cross-border remittances, e-wallets, mobile payments, and banking transactions conducted via the Internet, apps, ATMs, and USSD. I also oversaw the integration of third-party systems, point-of-sale devices, prepaid services, and transit products. Our efforts extended to regulatory reporting, fraud analytics, sanctions screening, and performance monitoring. We developed, maintained, and updated a data warehouse utilising the Microsoft Data Platform, employing technologies such as Microsoft SQL Server, Integration Services, Analysis Services, Reporting Services, and R.",
+    "MIS Solutions Architecture", "Banking Innovation", "2010-2020", "As the lead and senior consultant for a five-person team in the innovation business unit, I managed all Management Information. My responsibilities included reporting and analytics for various payment systems like domestic and cross-border remittances, e-wallets, mobile payments, and banking transactions conducted via the Internet, apps, ATMs, and USSD. I also oversaw the integration of third-party systems, point-of-sale devices, prepaid services, and transit products. Our efforts extended to regulatory reporting, fraud analytics, sanctions screening, and performance monitoring. We developed, maintained, and updated a data warehouse utilising the Microsoft Data Platform, employing technologies such as Microsoft SQL Server, Integration Services, Analysis Services, Reporting Services, and R.",
 "Software Project Lead", "Entertainment", "2007-2010", "I played a crucial role in supporting and revamping a royalty calculation engine. This pivotal project involved developing a C# front-end to manage complex financial processes seamlessly integrated with the SAP ERP system. We utilised the Microsoft Data Platform and leveraged Microsoft BizTalk for seamless integration."
 ) |>
   detailed_entries(role, dates, company, "", details)
@@ -66,42 +80,42 @@ tribble(
   detailed_entries(degree, dates, uni, loc, details)
 ```
 
-# Community
+# User Groups
 
 ```{r community}
 tribble(
   ~ role, ~ company, ~ dates, ~ loc, ~ details,
-  "Co Organiser", "Johannesburg R User Group", "2018 to current", "Johannesburg, South Africa", "This group serves as a platform for sharing knowledge, networking, and promoting the use of R in various statistical, data analysis, and programming endeavors within the Johannesburg area. https://www.rusergroup.co.za",
-  "Co Organiser", "PyData Johannesburg ", "Starting Feb 2023", "Johannesburg, South Africa", "This local chapter of an international initiative focuses on nurturing community growth and engagement through Python and data science topics tailored to Johannesburg. https://www.pydata.co.za",
+  "Co Organiser", "Johannesburg R User Group", "2018 - present", "Johannesburg, South Africa", "This group serves as a platform for sharing knowledge, networking, and promoting the use of R in various statistical, data analysis, and programming endeavors within the Johannesburg area. https://www.rusergroup.co.za",
+  "Co Organiser", "PyData Johannesburg ", "2023 - present", "Johannesburg, South Africa", "This local chapter of an international initiative focuses on nurturing community growth and engagement through Python and data science topics tailored to Johannesburg. https://www.pydata.co.za",
 ) |>
   detailed_entries(role, dates, company, loc, details)
 ```
-
-# Presentations
-
-```{r presentations}
-tribble(
-  ~ title, ~ loc, ~ date,
-  "Building a RAG Application with Azure OpenAI and Microsoft Fabric", "Data and AI Community Day Johannesburg", "2024-04-09",
-  "Deploying a LLM with Vector Search in Databricks", "AI/ML and Data Infusion Roadshow Durban", "2023-11-11",
-  "Gently Exploring the Azure Databricks Lakehouse", "Data Saturday Cape Town 2023", "2023-09-30",
-  "Gently Exploring the Azure Databricks Lakehouse", "Data Saturday Durban 2023", "2023-08-19",
-  "Gently Exploring the Azure Databricks Lakehouse", "Data Saturday Johannesburg 2023", "2023-08-05",
-  "Key Insights for Data Scientists from Microsoft Build", "Johannesburg R User Group", "2023-06-13",
-  "Databricks for R developers", "Johannesburg R User Group", "2023-05-09") |>
-  detailed_entries(title, date, loc, .protect=FALSE)
-```
-
-\newpage
 
 # Open Source
 
 ```{r Open Source}
 tribble(
   ~ role, ~ company, ~ dates, ~ loc, ~ details,
-  "Author", "Aerial Mzansi", "2022 to current", "Johannesburg, South Africa", "A proof of concept project, open-source, aimed at highlighting the beauty of South Africa. This endeavour utilises various technologies, including Quarto, GitHub Actions, AzureStor, and mapbotverse. https://www.aerialmzansi.com/",
+  "Author", "Aerial Mzansi", "2022 - present", "Johannesburg, South Africa", "A proof of concept project, open-source, aimed at highlighting the beauty of South Africa. This endeavour utilises various technologies, including Quarto, GitHub Actions, AzureStor, and mapbotverse. https://www.aerialmzansi.com/",
 ) |>
   detailed_entries(role, dates, company, loc, details)
+```
+
+\newpage
+
+# Presentations
+
+A full list of my technical presentations can be found on [Sessionize](https://sessionize.com/luis-de-sousa/).
+
+```{r presentations}
+tribble(
+  ~ title, ~ event, ~ city, ~ date,
+  "Building a RAG Application with Azure OpenAI and Microsoft Fabric", "Data and AI Community Day", "Johannesburg", "2024-04-09",
+  "Deploying a LLM with Vector Search in Databricks", "AI/ML and Data Infusion Roadshow", "Durban", "2023-11-11",
+  "Gently Exploring the Azure Databricks Lakehouse", "Data Saturday", "Cape Town, Durban, Johannesburg", "2023-09-30",
+  "Key Insights for Data Scientists from Microsoft Build", "R User Group", "Johannesburg", "2023-06-13",
+  "Databricks for R developers", "R User Group", "Johannesburg", "2023-05-09") |>
+  detailed_entries(what = title, when = year(date), with = event, where = city, .protect=FALSE)
 ```
 
 # Accreditation Courses
@@ -114,7 +128,7 @@ tribble(
   "Generative AI Fundamentals", "Databricks", "2023-07-01", FALSE,
   "Azure Databricks Platform Architect", "Databricks", "2023-06-20", FALSE,
   "Databricks Platform Administrator", "Databricks", "2023-02-01", FALSE,
-  "Databricks Lakehouse Fundamentals", "Databricks", "2023-01-01", FALSE,
+  #"Databricks Lakehouse Fundamentals", "Databricks", "2023-01-01", FALSE,
   "RStudio Professional Administrator Certification", "R Studio", "2019-01-16", TRUE,
   "R Software Fundamentals with Applications to Statistical Analyses and Modelling", "Wits", "2018-07-13", TRUE,
   #"2017 Turbo Charged Engineering Programme", "Standard Bank", "2017-04-07", TRUE,
@@ -137,43 +151,51 @@ tribble(
 
 # Certifications
 
+A full list of my certifications can be found on [Accredible](https://credentials.databricks.com/profile/luisdesousa/wallet), [Credly](https://www.credly.com/users/luisdza/badges) and [MSLearn](https://learn.microsoft.com/en-us/users/luisdesousa-3981/transcript/7xx26c4jeyq1nyq?tab=credentials-tab).
+
 ```{r certification}
 tribble(
   ~ title, ~ organisation, ~ earned_date, ~ expires_date, ~ physical_certificate,
-  "Microsoft Certified: Fabric Analytics Engineer Associate", "Microsoft", "2024-01-25", "NA", FALSE,
+  "Fabric Analytics Engineer Associate", "Microsoft", "2024-01-25", "NA", FALSE,
   "Databricks Certified Data Engineer Associate", "Databricks", "2023-06-09", "NA", FALSE,
   "Databricks Certified Data Analyst Associate", "Databricks", "2023-03-01", "NA", FALSE,
-  "Microsoft Certified: Azure Data Engineer Associate", "Microsoft", "2022-11-10", "2023-11-11", FALSE,
-  "Microsoft Certified: Power BI Data Analyst Associate", "Microsoft", "2022-09-29", "2023-09-30", FALSE,
-  "Microsoft Certified: Dynamics 365 Fundamentals (ERP)", "Microsoft", "2022-09-16", "NA", FALSE,
-  "Microsoft 365 Certified: Fundamentals", "Microsoft", "2022-09-09", "NA", FALSE,
-  "Microsoft Certified: Power Platform Fundamentals", "Microsoft", "2021-11-27", "NA", FALSE,
-  "Microsoft Certified: Azure Fundamentals", "Microsoft", "2021-11-18", "NA", FALSE,
-  "Microsoft Certified: Security, Compliance, and Identity Fundamentals", "Microsoft", "2021-11-10", "NA", FALSE,
-  "Microsoft Certified: Dynamics 365 Fundamentals (CRM)", "Microsoft", "2021-10-22", "NA", FALSE,
-  "Microsoft Office Specialist: Expert (Office 2019)", "Microsoft", "2021-10-13", "NA", TRUE,
-  "Microsoft Office Specialist: Microsoft Excel Expert (Office 2019)", "Microsoft", "2021-10-13", "NA", TRUE,
-  "Microsoft Office Specialist: Microsoft Word Expert (Office 2019)", "Microsoft", "2021-10-13", "NA", TRUE,
-  "Microsoft Office Specialist: Associate (Office 2019)", "Microsoft", "2021-10-11", "NA", TRUE,
-  "Microsoft Office Specialist: PowerPoint Associate (Office 2019)", "Microsoft", "2021-10-11", "NA", TRUE,
-  "Microsoft Office Specialist: Excel Associate (Office 2019)", "Microsoft", "2021-10-11", "NA", TRUE,
-  "Microsoft Office Specialist: Word Associate (Office 2019)", "Microsoft", "2021-09-22", "NA", TRUE,
-  "Microsoft Certified: Azure AI Fundamentals", "Microsoft", "2021-10-08", "NA", FALSE,
-  "Microsoft Certified: Azure Data Fundamentals", "Microsoft", "2021-09-17", "NA", FALSE,
-  "Microsoft Certified Professional", "Microsoft", "2017-08-10", "NA", TRUE,
+  "Azure Data Engineer Associate", "Microsoft", "2022-11-10", "2023-11-11", FALSE,
+  "Power BI Data Analyst Associate", "Microsoft", "2022-09-29", "2023-09-30", FALSE,
+  "All Microsoft Fundamentals Certifications, 8 exams", "Microsoft", "2022-01-01", "NA", FALSE,
+  "Microsoft Office Specialist: Expert (Office 2019), 5 exams", "Microsoft", "2021-10-13", "NA", TRUE,
   "SAFe Agilist (SA)", "Scaled Agile", "2017-02-01", "NA", FALSE,
   "IASA Architect CITA-F (Foundation) Core", "IASA Global", "2011-05-01", "NA", FALSE,
   "CompTIA CTT+ Classroom Trainer", "CompTIA", "2006-07-24", "NA", TRUE,
-  "Microsoft Certified Trainer - MCT", "Microsoft", "2006-06-16", "2023-09-23", TRUE,
+  "Microsoft Certified Trainer (MCT)", "Microsoft", "2006-06-16", "2023-09-23", TRUE,
   "LPI (Linux Professional Institute) 101", "LPI", "2005-05-01", "NA", FALSE,
-  "ICDL (International Computer Drivers Licence)", "ICDL", "2003-10-27", "NA", TRUE,
-  "CompTIA Network Infrastructure Professional – CNIP Stackable Certification", "CompTIA", "2002-07-09", "NA", TRUE,
-  "CompTIA Server+", "CompTIA", "2002-07-09", "NA", TRUE,
-  "CompTIA IT Operations Specialist – CIOS Stackable Certification", "CompTIA", "2002-05-06", "NA", TRUE,
-  "CompTIA Network+", "CompTIA", "2002-05-06", "NA", TRUE,
-  "CompTIA A+", "CompTIA", "2002-04-08", "NA", TRUE
+  "Server+", "CompTIA", "2002-07-09", "NA", TRUE,
+  "Network+", "CompTIA", "2002-05-06", "NA", TRUE,
+  "A+", "CompTIA", "2002-04-08", "NA", TRUE
   ) |>
   brief_entries(title, year(earned_date), organisation)
+
+# Fundamentals
+#  "Microsoft Certified: Dynamics 365 Fundamentals (ERP)", "Microsoft", "2022-09-16", "NA", FALSE,
+#  "Microsoft 365 Certified: Fundamentals", "Microsoft", "2022-09-09", "NA", FALSE,
+#  "Microsoft Certified: Power Platform Fundamentals", "Microsoft", "2021-11-27", "NA", FALSE,
+#  "Microsoft Certified: Azure Fundamentals", "Microsoft", "2021-11-18", "NA", FALSE,
+#  "Microsoft Certified: Security, Compliance, and Identity Fundamentals", "Microsoft", "2021-11-10", "NA", FALSE,
+#  "Microsoft Certified: Dynamics 365 Fundamentals (CRM)", "Microsoft", "2021-10-22", "NA", FALSE,
+#  "Microsoft Certified: Azure AI Fundamentals", "Microsoft", "2021-10-08", "NA", FALSE,
+#  "Microsoft Certified: Azure Data Fundamentals", "Microsoft", "2021-09-17", "NA", FALSE,
+
+# Office
+#  "Microsoft Office Specialist: Microsoft Excel Expert (Office 2019)", "Microsoft", "2021-10-13", "NA", TRUE,
+#  "Microsoft Office Specialist: Microsoft Word Expert (Office 2019)", "Microsoft", "2021-10-13", "NA", TRUE,
+#  "Microsoft Office Specialist: Associate (Office 2019)", "Microsoft", "2021-10-11", "NA", TRUE,
+#  "Microsoft Office Specialist: PowerPoint Associate (Office 2019)", "Microsoft", "2021-10-11", "NA", TRUE,
+#  "Microsoft Office Specialist: Excel Associate (Office 2019)", "Microsoft", "2021-10-11", "NA", TRUE,
+#  "Microsoft Office Specialist: Word Associate (Office 2019)", "Microsoft", "2021-09-22", "NA", TRUE,
+
+# Others
+#  "ICDL (International Computer Drivers Licence)", "ICDL", "2003-10-27", "NA", TRUE,
+#  "CompTIA Network Infrastructure Professional – CNIP Stackable Certification", "CompTIA", "2002-07-09", "NA", TRUE,
+#  "CompTIA IT Operations Specialist – CIOS Stackable Certification", "CompTIA", "2002-05-06", "NA", TRUE,
 ```
 
 ```{r retired certifications}
@@ -181,14 +203,14 @@ tribble(
 #  ~ title, ~ organisation, ~ start_date, ~end_date, ~ physical_certificate,
 #  "Microsoft Certified Technology Specialist", "Microsoft", "2009-03-06", "NA", TRUE,
 #  "Microsoft Certified Technology Specialist - Microsoft Forefront Client and Server, Configuration", "Microsoft", "2009-03-06", "NA", TRUE,
-#  "Microsoft Certified Systems Administrator - MCSA Windows 2003", "Microsoft", "2008-03-31", "NA", TRUE,
-#  "Microsoft Certified Desktop Support Technician - MCDST Windows XP", "Microsoft", "2006-02-28", "NA", TRUE,
-#  "Microsoft Certified Systems Administrator - MCSA Windows 2000", "Microsoft", "2003-09-30", "NA", TRUE,
-#  "Microsoft Certified Systems Engineer - MCSE Windows 2000", "Microsoft", "2005-12-22", "NA", TRUE,
-#  "Microsoft Certified Database Administrator - MCDBA SQL Server 2000", "Microsoft", "2005-09-28", "NA", TRUE,
-#  "Certified Wireless Network Administrator - CWNA", "CWNP", "2007-10-07", "NA", TRUE,
+#  "Microsoft Certified Systems Administrator (MCSA) Windows 2003", "Microsoft", "2008-03-31", "NA", TRUE,
+#  "Certified Wireless Network Administrator (CWNA)", "CWNP", "2007-10-07", "NA", TRUE,
+#  "Microsoft Certified Desktop Support Technician (MCDST) Windows XP", "Microsoft", "2006-02-28", "NA", TRUE,
+#  "Microsoft Certified Systems Engineer (MCSE) Windows 2000", "Microsoft", "2005-12-22", "NA", TRUE,
+#  "Microsoft Certified Database Administrator (MCDBA) SQL Server 2000", "Microsoft", "2005-09-28", "NA", TRUE,
 #  "Microsoft Certified Professional", "Microsoft", "2003-01-27", "NA", TRUE,
-#  "Cisco Certified Network Associate - CCNA", "Cisco", "2003-09-12", "NA", TRUE
+#  "Microsoft Certified Systems Administrator (MCSA) Windows 2000", "Microsoft", "2003-09-30", "NA", TRUE,
+#  "Cisco Certified Network Associate (CCNA)", "Cisco", "2003-09-12", "NA", TRUE
 #  ) %>%
 #  brief_entries(title, year(start_date), organisation)
 ```
