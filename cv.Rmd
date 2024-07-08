@@ -199,20 +199,20 @@ tribble(
 ```
 
 ```{r retired certifications}
-#tribble(
-#  ~ title, ~ organisation, ~ start_date, ~end_date, ~ physical_certificate,
-#  "Microsoft Certified Technology Specialist", "Microsoft", "2009-03-06", "NA", TRUE,
-#  "Microsoft Certified Technology Specialist - Microsoft Forefront Client and Server, Configuration", "Microsoft", "2009-03-06", "NA", TRUE,
-#  "Microsoft Certified Systems Administrator (MCSA) Windows 2003", "Microsoft", "2008-03-31", "NA", TRUE,
-#  "Certified Wireless Network Administrator (CWNA)", "CWNP", "2007-10-07", "NA", TRUE,
-#  "Microsoft Certified Desktop Support Technician (MCDST) Windows XP", "Microsoft", "2006-02-28", "NA", TRUE,
-#  "Microsoft Certified Systems Engineer (MCSE) Windows 2000", "Microsoft", "2005-12-22", "NA", TRUE,
-#  "Microsoft Certified Database Administrator (MCDBA) SQL Server 2000", "Microsoft", "2005-09-28", "NA", TRUE,
-#  "Microsoft Certified Professional", "Microsoft", "2003-01-27", "NA", TRUE,
-#  "Microsoft Certified Systems Administrator (MCSA) Windows 2000", "Microsoft", "2003-09-30", "NA", TRUE,
-#  "Cisco Certified Network Associate (CCNA)", "Cisco", "2003-09-12", "NA", TRUE
-#  ) %>%
-#  brief_entries(title, year(start_date), organisation)
+tribble(
+  ~ title, ~ organisation, ~ start_date, ~end_date, ~ physical_certificate,
+  "Microsoft Certified Technology Specialist", "Microsoft", "2009-03-06", "NA", TRUE,
+  "Microsoft Certified Technology Specialist - Microsoft Forefront Client and Server, Configuration", "Microsoft", "2009-03-06", "NA", TRUE,
+  "Microsoft Certified Systems Administrator (MCSA) Windows 2003", "Microsoft", "2008-03-31", "NA", TRUE,
+  "Certified Wireless Network Administrator (CWNA)", "CWNP", "2007-10-07", "NA", TRUE,
+  "Microsoft Certified Desktop Support Technician (MCDST) Windows XP", "Microsoft", "2006-02-28", "NA", TRUE,
+  "Microsoft Certified Systems Engineer (MCSE) Windows 2000", "Microsoft", "2005-12-22", "NA", TRUE,
+  "Microsoft Certified Database Administrator (MCDBA) SQL Server 2000", "Microsoft", "2005-09-28", "NA", TRUE,
+  "Microsoft Certified Professional", "Microsoft", "2003-01-27", "NA", TRUE,
+  "Microsoft Certified Systems Administrator (MCSA) Windows 2000", "Microsoft", "2003-09-30", "NA", TRUE,
+  "Cisco Certified Network Associate (CCNA)", "Cisco", "2003-09-12", "NA", TRUE
+  ) %>%
+  brief_entries(title, year(start_date), organisation)
 ```
 
 ```{r competitions}
