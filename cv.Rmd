@@ -198,7 +198,10 @@ tribble(
 #  "CompTIA IT Operations Specialist – CIOS Stackable Certification", "CompTIA", "2002-05-06", "NA", TRUE,
 ```
 
+\newpage
+
 Retired Certifications
+
 ```{r retired certifications}
 tribble(
   ~ title, ~ organisation, ~ start_date, ~end_date, ~ physical_certificate,
