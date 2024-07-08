@@ -35,9 +35,9 @@ With 17 years of experience in data and analytics consulting, I specialise in de
 ```{r professional-experience}
 tribble(
   ~ role, ~ company, ~ loc, ~ dates, ~ details,
-  "Principal Consultant and Director", "Syeop", "Johannesburg, South Africa", "May. 2007 - Present", "I lead high-impact data and analytics initiatives across diverse sectors such as real estate, food and beverage, and banking. My managerial responsibilities encompass prospecting, negotiating, and overseeing business and project management. Additionally, I contribute to team development by recruiting, training, and mentoring staff. My technical expertise includes market analysis, consolidating financial data on cloud platforms, forecasting, and developing Management Information Systems (MIS) architectures.",
-  "Support & Development Consultant", "Cyest Corporation", "Johannesburg, South Africa", "August 2004 - April 2007", "Before DevOps emerged, I served as a deployment automation engineer. I designed, developed, and managed a custom SQL replication framework using SSIS in this capacity. My responsibilities also included overseeing system upgrades, providing technical support, and implementing additional integrations.",
-  "IT Professional Consultant", "Artec Computer Systems", "Johannesburg, South Africa", "July 2002 - July 2004", "My role involved providing technical support for applications, desktops, networks, and servers primarily in Microsoft environments. Beyond Microsoft technologies, I managed Cisco's LAN, WAN, and VOIP systems, worked with Interactive Voice Response (IVR) technologies, and maintained Dell & EMC hardware."
+  "Principal Consultant and Director", "Syeop", "Johannesburg, South Africa", "May. 2007 - Present", "I lead high-impact data and analytics initiatives across diverse sectors such as real estate, food and beverage, and banking. My managerial responsibilities encompass prospecting, negotiating, and overseeing business and project management. Additionally, I contribute to team development by recruiting, training, and mentoring staff. My technical expertise includes market analysis, consolidating financial data on cloud platforms, forecasting, and developing Management Information Systems (MIS) architectures."
+#  "Support & Development Consultant", "Cyest Corporation", "Johannesburg, South Africa", "August 2004 - April 2007", "Before DevOps emerged, I served as a deployment automation engineer. I designed, developed, and managed a custom SQL replication framework using SSIS in this capacity. My responsibilities also included overseeing system upgrades, providing technical support, and implementing additional integrations.",
+#  "IT Professional Consultant", "Artec Computer Systems", "Johannesburg, South Africa", "July 2002 - July 2004", "My role involved providing technical support for applications, desktops, networks, and servers primarily in Microsoft environments. Beyond Microsoft technologies, I managed Cisco's LAN, WAN, and VOIP systems, worked with Interactive Voice Response (IVR) technologies, and maintained Dell & EMC hardware."
 ) |>
   detailed_entries(role, dates, company, loc, details)
 ```
@@ -53,14 +53,13 @@ tribble(
   detailed_entries(what= subtitle, with = skill, why = details)
 ```
 
-\newpage
-
 # Consulting Projects
 
 ```{r consulting}
 tribble(
   ~ role, ~ company, ~ dates, ~ details,
-  "Data Capacity Services", "Real Estate", "2024", "As a senior data consultant, I created data structures that allowed researchers to analyse South Africa's property markets for the CityMark report. I used MSSQL for data management and R for spatial analysis to generate insights across national and metropolitan areas.",
+  "Data Capacity Services", "Financial Services", "2024", "As a senior data consultant, I designed and implemented a credit risk analysis process for a loan book. This project involved using R for data management and advanced analytics, yielding critical insights into the loan portfolio's performance and risk metrics.",
+  "Data Capacity Services", "Real Estate", "2024", "As a senior data consultant, I created data structures that allowed researchers to analyse South Africa's property markets. I used DuckDB for data management and R for spatial analysis to generate insights across national and metropolitan areas.",
   "Consolidated Financial Warehouse","Real Estate", "2023", "As part of a two-person senior consulting team, we created and implemented a unified overview of the company's financial performance across all its entities. We used financial systems like Xero, JDE, and LOB applications. For this project, we employed FiveTran for data integration, BigQuery for data storage and analytics, Looker Studio for data visualisation, and Google Sheets for data sharing and collaboration.",
   "Databricks Proof of Value","Health and Fitness", "2023", "As a senior consultant in a two-person team, I co-engineered and implemented a Databricks solution in the cloud for both development and production environments. This project involved using technologies such as Azure Databricks, Azure Data Lake Storage Gen2, Azure DevOps, KeyVault, Data Factory, and PowerBI.",
   "Forecasting Capability Building", "Food and Beverage", "2021-2022", "As the project lead and senior consultant on a two-person team, we developed and implemented an automated statistical forecasting system for SKUs within a valuable supply chain. For this initiative, we used R and Microsoft SQL Server.",
@@ -127,6 +126,7 @@ tribble(
   "Solutions Architect Essentials", "Databricks", "2024-01-05", FALSE,
   "Generative AI Fundamentals", "Databricks", "2023-07-01", FALSE,
   "Azure Databricks Platform Architect", "Databricks", "2023-06-20", FALSE,
+  "AWS Partner: Cloud Economics Accreditation", "AWS", "2023-03-18", FALSE,
   "Databricks Platform Administrator", "Databricks", "2023-02-01", FALSE,
   #"Databricks Lakehouse Fundamentals", "Databricks", "2023-01-01", FALSE,
   "RStudio Professional Administrator Certification", "R Studio", "2019-01-16", TRUE,
