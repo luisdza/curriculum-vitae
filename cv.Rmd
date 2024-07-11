@@ -21,6 +21,8 @@ profilepic: luisdza-headshot.png
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+#install.packages('tinytex')
+#tinytex::install_tinytex()
 library(vitae)
 library(lubridate)
 library(tibble)
@@ -53,22 +55,6 @@ tribble(
   detailed_entries(what= subtitle, with = skill, why = details)
 ```
 
-# Consulting Projects
-
-```{r consulting}
-tribble(
-  ~ role, ~ company, ~ dates, ~ details,
-  "Data Capacity Services", "Financial Services", "2024", "As a senior data consultant, I designed and implemented a credit risk analysis process for a loan book. This project involved using R for data management and advanced analytics, yielding critical insights into the loan portfolio's performance and risk metrics.",
-  "Data Capacity Services", "Real Estate", "2024", "As a senior data consultant, I created data structures that allowed researchers to analyse South Africa's property markets. I used DuckDB for data management and R for spatial analysis to generate insights across national and metropolitan areas.",
-  "Consolidated Financial Warehouse","Real Estate", "2023", "As part of a two-person senior consulting team, we created and implemented a unified overview of the company's financial performance across all its entities. We used financial systems like Xero, JDE, and LOB applications. For this project, we employed FiveTran for data integration, BigQuery for data storage and analytics, Looker Studio for data visualisation, and Google Sheets for data sharing and collaboration.",
-  "Databricks Proof of Value","Health and Fitness", "2023", "As a senior consultant in a two-person team, I co-engineered and implemented a Databricks solution in the cloud for both development and production environments. This project involved using technologies such as Azure Databricks, Azure Data Lake Storage Gen2, Azure DevOps, KeyVault, Data Factory, and PowerBI.",
-  "Forecasting Capability Building", "Food and Beverage", "2021-2022", "As the project lead and senior consultant on a two-person team, we developed and implemented an automated statistical forecasting system for SKUs within a valuable supply chain. For this initiative, we used R and Microsoft SQL Server.",
-    "MIS Solutions Architecture", "Banking Innovation", "2010-2020", "As the lead and senior consultant for a five-person team in the innovation business unit, I managed all Management Information. My responsibilities included reporting and analytics for various payment systems like domestic and cross-border remittances, e-wallets, mobile payments, and banking transactions conducted via the Internet, apps, ATMs, and USSD. I also oversaw the integration of third-party systems, point-of-sale devices, prepaid services, and transit products. Our efforts extended to regulatory reporting, fraud analytics, sanctions screening, and performance monitoring. We developed, maintained, and updated a data warehouse utilising the Microsoft Data Platform, employing technologies such as Microsoft SQL Server, Integration Services, Analysis Services, Reporting Services, and R.",
-"Software Project Lead", "Entertainment", "2007-2010", "I played a crucial role in supporting and revamping a royalty calculation engine. This pivotal project involved developing a C# front-end to manage complex financial processes seamlessly integrated with the SAP ERP system. We utilised the Microsoft Data Platform and leveraged Microsoft BizTalk for seamless integration."
-) |>
-  detailed_entries(role, dates, company, "", details)
-```
-
 # Education
 
 ```{r}
@@ -79,6 +65,29 @@ tribble(
   detailed_entries(degree, dates, uni, loc, details)
 ```
 
+\newpage
+
+# Director Accreditation
+
+```{r director_accreditation}
+tribble(
+  ~ title, ~ organisation, ~ date, ~ physical_certificate,
+  "Being a Director Part 1: Intro to Corporate Governance.", "IoDSA", "2019-11-05", FALSE,
+  "Being a Director Part 2: The role of the governing body in ethics, strategy, performance and integrated reporting.", "IoDSA", "2019-11-06", FALSE,
+  "Being a Director Part 3: The role of the governing body in risk, compliance, technology & information and assurance.", "IoDSA", "2019-11-11", FALSE,
+  "Being a Director Part 4: Increasing the effectiveness of and adding value to the governing body.", "IoDSA", "2019-11-12", FALSE,
+  "Being a Director Part 5: Boardroom theory into practice.", "IoDSA", "2019-12-06", FALSE,
+  "Governance of Ethics: In collaboration with The Ethics Institute.", "IoDSA", "2019-12-04", FALSE,
+  "Master Board Leadership", "IoDSA", "2019-12-04", FALSE,
+  
+  "Financial Insights for Non-Financial Directors: For non-financial directors.", "IoDSA", "2019-10-15", FALSE,
+  "Governance for SMEs", "IoDSA", "2018-05-08", FALSE,
+  "So you want to be a Non-executive Director?", "IoDSA", "2019-08-29", FALSE,
+  "Technology and Infromation Governance", "IoDSA", "2019-11-20", FALSE
+    ) |>
+  brief_entries(title, year(date), organisation)
+```
+
 # User Groups
 
 ```{r community}
@@ -87,6 +96,17 @@ tribble(
   "Co Organiser", "Johannesburg R User Group", "2018 - present", "Johannesburg, South Africa", "This group serves as a platform for sharing knowledge, networking, and promoting the use of R in various statistical, data analysis, and programming endeavors within the Johannesburg area. https://www.rusergroup.co.za",
   "Co Organiser", "PyData Johannesburg ", "2023 - present", "Johannesburg, South Africa", "This local chapter of an international initiative focuses on nurturing community growth and engagement through Python and data science topics tailored to Johannesburg. https://www.pydata.co.za",
 ) |>
+  detailed_entries(role, dates, company, loc, details)
+```
+
+# Volunteering
+
+```{r Volunteering}
+tribble(
+  ~ role, ~ company, ~ dates, ~ loc, ~ details,
+  "Area Director L2, Toastmasters Southern Africa (District 74)", "Toastmasters International", "Jul 2016 - Jun 2017", "Southern Africa", "I oversaw the performance of 12 clubs in the Johannesburg area, providing guidance and support to club officers and members. I also organised and facilitated training sessions for club officers and members.",
+  "Treasurer & IT", "Friends of the Ballet", "Sep 2010 - Jun 2014", "Johannesburg, South Africa", "I managed the organisation's finances, including budgeting, financial reporting, and compliance. I also maintained the website and managed the organisation's IT infrastructure."
+  ) |>
   detailed_entries(role, dates, company, loc, details)
 ```
 
@@ -117,22 +137,26 @@ tribble(
   detailed_entries(what = title, when = year(date), with = event, where = city, .protect=FALSE)
 ```
 
+# Consulting Projects
+
+```{r consulting}
+tribble(
+  ~ role, ~ company, ~ dates, ~ details,
+  "Data Capacity Services", "Financial Services", "2024", "As a senior data consultant, I designed and implemented a credit risk analysis process for a loan book. This project involved using R for data management and advanced analytics, yielding critical insights into the loan portfolio's performance and risk metrics.",
+  "Data Capacity Services", "Real Estate", "2024", "As a senior data consultant, I created data structures that allowed researchers to analyse South Africa's property markets. I used DuckDB for data management and R for spatial analysis to generate insights across national and metropolitan areas.",
+  "Consolidated Financial Warehouse","Real Estate", "2023", "As part of a two-person senior consulting team, we created and implemented a unified overview of the company's financial performance across all its entities. We used financial systems like Xero, JDE, and LOB applications. For this project, we employed FiveTran for data integration, BigQuery for data storage and analytics, Looker Studio for data visualisation, and Google Sheets for data sharing and collaboration.",
+  "Databricks Proof of Value","Health and Fitness", "2023", "As a senior consultant in a two-person team, I co-engineered and implemented a Databricks solution in the cloud for both development and production environments. This project involved using technologies such as Azure Databricks, Azure Data Lake Storage Gen2, Azure DevOps, KeyVault, Data Factory, and PowerBI.",
+  "Forecasting Capability Building", "Food and Beverage", "2021-2022", "As the project lead and senior consultant on a two-person team, we developed and implemented an automated statistical forecasting system for SKUs within a valuable supply chain. For this initiative, we used R and Microsoft SQL Server.",
+    "MIS Solutions Architecture", "Banking Innovation", "2010-2020", "As the lead and senior consultant for a five-person team in the innovation business unit, I managed all Management Information. My responsibilities included reporting and analytics for various payment systems like domestic and cross-border remittances, e-wallets, mobile payments, and banking transactions conducted via the Internet, apps, ATMs, and USSD. I also oversaw the integration of third-party systems, point-of-sale devices, prepaid services, and transit products. Our efforts extended to regulatory reporting, fraud analytics, sanctions screening, and performance monitoring. We developed, maintained, and updated a data warehouse utilising the Microsoft Data Platform, employing technologies such as Microsoft SQL Server, Integration Services, Analysis Services, Reporting Services, and R.",
+"Software Project Lead", "Entertainment", "2007-2010", "I played a crucial role in supporting and revamping a royalty calculation engine. This pivotal project involved developing a C# front-end to manage complex financial processes seamlessly integrated with the SAP ERP system. We utilised the Microsoft Data Platform and leveraged Microsoft BizTalk for seamless integration."
+) |>
+  detailed_entries(role, dates, company, "", details)
+```
+
+\newpage
+
 # Accreditation Courses
 
-```{r director_accreditation}
-tribble(
-  ~ title, ~ organisation, ~ date, ~ physical_certificate,
-  "Being a Director Part 1: Intro to Corporate Governance.", "IoDSA", "2024-04-08", FALSE,
-  "Being a Director Part 2: The role of the governing body in ethics, strategy, performance and integrated reporting.", "IoDSA", "2024-04-08", FALSE,
-  "Being a Director Part 3: The role of the governing body in risk, compliance, technology & information and assurance.", "IoDSA", "2024-04-08", FALSE,
-  "Being a Director Part 4: Increasing the effectiveness of and adding value to the governing body.", "IoDSA", "2024-04-08", FALSE,
-  "Being a Director Part 5: Boardroom theory into practice.", "IoDSA", "2024-04-08", FALSE,
-  "Governance of Ethics: In collaboration with The Ethics Institute.", "IoDSA", "2024-04-08", FALSE,
-  "Financial Insights for Non-Financial Directors: For non-financial directors.", "IoDSA", "2024-04-08", FALSE
-  ) |>
-  brief_entries(title, year(date), organisation)
-```
-  
 ```{r accreditation}
 tribble(
   ~ title, ~ organisation, ~ date, ~ physical_certificate,
@@ -211,8 +235,6 @@ tribble(
 #  "CompTIA Network Infrastructure Professional – CNIP Stackable Certification", "CompTIA", "2002-07-09", "NA", TRUE,
 #  "CompTIA IT Operations Specialist – CIOS Stackable Certification", "CompTIA", "2002-05-06", "NA", TRUE,
 ```
-
-\newpage
 
 Retired Certifications
 
