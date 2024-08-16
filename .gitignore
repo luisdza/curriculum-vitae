@@ -47,3 +47,9 @@ po/*~
 
 # RStudio Connect folder
 rsconnect/
+
+/.quarto/
+/fonts
+awesome-cv.cls
+cv.tex
+cv.typ

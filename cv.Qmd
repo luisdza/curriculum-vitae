@@ -1,29 +1,49 @@
 ---
-name: Luis
-surname: de Sousa
-position: "Data and Analytics Consultant"
-#pronouns: he/him
-address: "Johannesburg, South Africa"
-#www: www.growinconsultation.com
-email: "luisd@syeop.co.za"
-phone: "tel:+27835908454"
-twitter: luis_de_sousa
-github: luisdza
-linkedin: luisdza
-sessionize: luis-de-sousa
-date: "`r format(Sys.time(), '%B %Y')`"
-docname: "CV"
-output:
-  vitae::awesomecv:
-    page_total: true
-profilepic: luisdza-headshot.png
+title: "Luis de Sousa's CV"
+author:
+  firstname: Luis
+  lastname: de Sousa
+  address: "Johannesburg, South Africa"
+  position: Data and Analytics Consultant
+  contacts:
+    - icon: fa envelope
+      text: luisd@syeop.co.za
+      url: "mailto:luisd@syeop.co.za"
+    - icon: assets/icon/bi-house-fill.svg
+      text: www.growinconsultation.com
+      url: https://www.growinconsultation.com
+    - icon: fa brands orcid
+      text: 0000-0000-0000-0000
+      url: https://orcid.org/0000-0000-0000-0000
+    - icon: fa brands github
+      text: GitHub
+      url: https://github.com/luisdza
+    - icon: fa brands sessionize
+      text: sessionize
+      url: https://sessionize.com/luis-de-sousa
+
+    - icon: fa brands linkedin
+      text: LinkedIn
+      url: https://linkedin.com/in/luisdza
+    - icon: fa brands x-twitter
+      text: twitter
+      url: https://twitter.com/luis_de_sousa   
+format: awesomecv-typst
+execute:
+  echo: false
+  warning: false
+  message: false
 ---
+# page_total: true
+# profilepic: luisdza-headshot.png
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 #install.packages('tinytex')
 #tinytex::install_tinytex()
-library(vitae)
+#library(vitae)
+# install.packages("typstcv", repos = "https://kazuyanagimoto.r-universe.dev")
+library(typstcv)
 library(lubridate)
 library(tibble)
 ```
