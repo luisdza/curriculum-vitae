@@ -23,6 +23,7 @@ profilepic: luisdza-headshot.png
 knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 #install.packages('tinytex')
 #tinytex::install_tinytex()
+#tinytex::tlmgr_install("roboto")
 library(vitae)
 library(lubridate)
 library(tibble)
@@ -157,7 +158,9 @@ tribble(
   detailed_entries(role, dates, company, "", details)
 ```
 
+<!--
 \newpage
+-->
 
 # Accreditation Courses
 
