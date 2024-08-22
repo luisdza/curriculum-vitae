@@ -112,7 +112,6 @@ tribble(
   ) |>
   detailed_entries(role, dates, company, loc, details)
 ```
--->
 
 # Open Source
 
@@ -125,6 +124,7 @@ tribble(
 ```
 
 \newpage
+-->
 
 # Presentations
 
