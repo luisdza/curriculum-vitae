@@ -67,6 +67,7 @@ tribble(
 
 \newpage
 
+<!--
 # Director Accreditation
 
 ```{r director_accreditation}
@@ -87,6 +88,7 @@ tribble(
     ) |>
   brief_entries(title, year(date), organisation)
 ```
+-->
 
 # User Groups
 
@@ -99,6 +101,7 @@ tribble(
   detailed_entries(role, dates, company, loc, details)
 ```
 
+<!--
 # Volunteering
 
 ```{r Volunteering}
@@ -109,6 +112,7 @@ tribble(
   ) |>
   detailed_entries(role, dates, company, loc, details)
 ```
+-->
 
 # Open Source
 
@@ -194,6 +198,7 @@ A full list of my certifications can be found on [Accredible](https://credential
 ```{r certification}
 tribble(
   ~ title, ~ organisation, ~ earned_date, ~ expires_date, ~ physical_certificate,
+  "Azure AI Engineer Associate", "Microsoft", "2024-08-01", "NA", FALSE,  
   "Fabric Analytics Engineer Associate", "Microsoft", "2024-01-25", "NA", FALSE,
   "Databricks Certified Data Engineer Associate", "Databricks", "2023-06-09", "NA", FALSE,
   "Databricks Certified Data Analyst Associate", "Databricks", "2023-03-01", "NA", FALSE,
