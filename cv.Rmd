@@ -1,7 +1,7 @@
 ---
 name: Luis
 surname: de Sousa
-position: "Data Analytics and AI Consultant"
+position: "Data, Analytics and AI Consultant"
 #pronouns: he/him
 address: "Johannesburg, South Africa"
 #www: www.growinconsultation.com
