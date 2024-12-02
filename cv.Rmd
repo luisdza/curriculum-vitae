@@ -164,9 +164,7 @@ tribble(
   detailed_entries(role, dates, company, "", details)
 ```
 
-<!--
 \newpage
--->
 
 # Accreditation Courses
 
@@ -249,8 +247,6 @@ tribble(
 #  "CompTIA Network Infrastructure Professional – CNIP Stackable Certification", "CompTIA", "2002-07-09", "NA", TRUE,
 #  "CompTIA IT Operations Specialist – CIOS Stackable Certification", "CompTIA", "2002-05-06", "NA", TRUE,
 ```
-
-\newpage
 
 Retired Certifications
 
