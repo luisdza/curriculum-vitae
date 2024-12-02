@@ -134,6 +134,10 @@ A full list of my technical presentations can be found on [Sessionize](https://s
 ```{r presentations}
 tribble(
   ~ title, ~ event, ~ city, ~ date,
+  "Compressing Trust - Unpacking the XZ-Utils Backdoor", "0xcon", "Johannesburg", "2024-11-09",
+  "Duck, Duck, Python - OLAP Data with DuckDB", "PyConZA 2024", "Cape Town", "2024-10-04",
+  "RAG and GRAPH: Better Together for Next-Level GenAI with GraphRAG", "Cape Town MS Developer User Group", "Cape Town", "2024-09-25",
+  "Enhancing Retrieval Augmented Generation with GraphRAG","Microsoft Season of AI", "Johannesburg", "2024-08-31", 
   "Building a RAG Application with Azure OpenAI and Microsoft Fabric", "Data and AI Community Day", "Johannesburg", "2024-04-09",
   "Deploying a LLM with Vector Search in Databricks", "AI/ML and Data Infusion Roadshow", "Durban", "2023-11-11",
   "Gently Exploring the Azure Databricks Lakehouse", "Data Saturday", "Cape Town, Durban, Johannesburg", "2023-09-30",
@@ -147,7 +151,8 @@ tribble(
 ```{r consulting}
 tribble(
   ~ role, ~ company, ~ dates, ~ details,
-  "AI and Data Engineer", "Education", "2024", "As a senior data consultant, I designed and implemented data solutions on Azure Synapse Analytics and Microsoft Fabric. Built a Retrieval Augmented Generation (RAG) database AI solution using Azure OpenAI and Python to enhance student support through data-driven insights.",
+  "Data Capacity Services", "Financial Services", "2024", "As a senior data engineer and architect, I contributed to designing a data product capability. I played a key role in optimising and expanding the 'next best action' as a service capability.",
+  "AI and Data Engineer", "Education", "2024", "As a senior data consultant, I designed and implemented data solutions on Azure Synapse Analytics and Microsoft Fabric. I built a Retrieval Augmented Generation (RAG) capability using a vector database, Azure OpenAI and Python to enhance student support through data-driven insights.",
   "Data Capacity Services", "Financial Services", "2024", "As a senior data consultant, I designed and implemented a credit risk analysis process for a loan book. This project involved using R for data management and advanced analytics, yielding critical insights into the loan portfolio's performance and risk metrics.",
   "Data Capacity Services", "Policy and Advocacy", "2024", "As a senior data consultant, I created data structures that allowed researchers to analyse South Africa's property markets. I used DuckDB for data management and R for spatial analysis to generate insights across national and metropolitan areas.",
   "Consolidated Financial Warehouse","Real Estate", "2023", "As part of a two-person senior consulting team, we created and implemented a unified overview of the company's financial performance across all its entities. We used financial systems like Xero, JDE, and LOB applications. For this project, we employed FiveTran for data integration, BigQuery for data storage and analytics, Looker Studio for data visualisation, and Google Sheets for data sharing and collaboration.",
