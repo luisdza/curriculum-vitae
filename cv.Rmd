@@ -4,7 +4,7 @@ surname: de Sousa
 position: "Data, Analytics and AI Consultant"
 #pronouns: he/him
 address: "Johannesburg, South Africa"
-#www: www.growinconsultation.com
+www: www.luisdesousa.com
 email: "luisd@syeop.co.za"
 phone: "tel:+27835908454"
 twitter: luis_de_sousa
@@ -200,6 +200,8 @@ tribble(
   brief_entries(title, year(date), organisation)
 ```
 
+\newpage
+
 # Certifications
 
 A full list of my certifications can be found on [Accredible](https://credentials.databricks.com/profile/luisdesousa/wallet), [Credly](https://www.credly.com/users/luisdza/badges) and [MSLearn](https://learn.microsoft.com/en-us/users/luisdesousa-3981/transcript/7xx26c4jeyq1nyq?tab=credentials-tab).
@@ -249,8 +251,6 @@ tribble(
 #  "CompTIA Network Infrastructure Professional – CNIP Stackable Certification", "CompTIA", "2002-07-09", "NA", TRUE,
 #  "CompTIA IT Operations Specialist – CIOS Stackable Certification", "CompTIA", "2002-05-06", "NA", TRUE,
 ```
-
-\newpage
 
 Retired Certifications
 
