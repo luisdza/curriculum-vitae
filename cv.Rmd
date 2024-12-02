@@ -139,10 +139,10 @@ tribble(
   "RAG and GRAPH: Better Together for Next-Level GenAI with GraphRAG", "Cape Town MS Developer User Group", "Cape Town", "2024-09-25",
   "Enhancing Retrieval Augmented Generation with GraphRAG","Microsoft Season of AI", "Johannesburg", "2024-08-31", 
   "Building a RAG Application with Azure OpenAI and Microsoft Fabric", "Data and AI Community Day", "Johannesburg", "2024-04-09",
-  "Deploying a LLM with Vector Search in Databricks", "AI/ML and Data Infusion Roadshow", "Durban", "2023-11-11",
-  "Gently Exploring the Azure Databricks Lakehouse", "Data Saturday", "Cape Town, Durban, Johannesburg", "2023-09-30",
-  "Key Insights for Data Scientists from Microsoft Build", "R User Group", "Johannesburg", "2023-06-13",
-  "Databricks for R developers", "R User Group", "Johannesburg", "2023-05-09") |>
+  "Deploying a LLM with Vector Search in Databricks", "AI/ML and Data Infusion Roadshow", "Durban", "2023-11-11" ) |>
+  #"Gently Exploring the Azure Databricks Lakehouse", "Data Saturday", "Cape Town, Durban, Johannesburg", "2023-09-30",
+  #"Key Insights for Data Scientists from Microsoft Build", "R User Group", "Johannesburg", "2023-06-13",
+  #"Databricks for R developers", "R User Group", "Johannesburg", "2023-05-09"
   detailed_entries(what = title, when = year(date), with = event, where = city, .protect=FALSE)
 ```
 
@@ -164,7 +164,9 @@ tribble(
   detailed_entries(role, dates, company, "", details)
 ```
 
+<!--
 \newpage
+-->
 
 # Accreditation Courses
 
@@ -247,6 +249,8 @@ tribble(
 #  "CompTIA Network Infrastructure Professional – CNIP Stackable Certification", "CompTIA", "2002-07-09", "NA", TRUE,
 #  "CompTIA IT Operations Specialist – CIOS Stackable Certification", "CompTIA", "2002-05-06", "NA", TRUE,
 ```
+
+\newpage
 
 Retired Certifications
 
