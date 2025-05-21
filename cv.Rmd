@@ -31,7 +31,7 @@ library(tibble)
 
 # Profile
 
-With over 20 years of experience in data and analytics consulting, I specialise in designing and building tailored data solutions for large organisations. My expertise spans data warehousing, integration, analysis, visualisation, and deployment in production environments, with recent experience in developing generative AI solutions. Additionally, I excel in leading cross-functional teams in dynamic settings. I firmly believe in the power of technology to drive sustainable change and am dedicated to problem-solving and fostering collaboration and transparency. I take pride in finding unique and practical solutions to challenges. Outside work, my interests include reading, exercising (CrossFit and running), dancing, exploring note-taking systems, and co-organising user groups.
+Data, analytics, and AI consultant with 20+ years of experience delivering robust, end-to-end data systems and insights at scale. I work with financial institutions, education, real estate, and public sector clients to design production-grade analytics platforms, enhance operational efficiency, and drive innovation through AI adoption. I lead cross-functional teams, mentor talent, and shape data strategy with a deep belief in collaborative, practical problem-solving. Outside work, my interests include exercising (running and climbing), co-organising user groups, reading, dancing, and exploring note-taking systems.
 
 # Professional Experience
 
@@ -151,7 +151,7 @@ tribble(
 ```{r consulting}
 tribble(
   ~ role, ~ company, ~ dates, ~ details,
-  "Data Capacity Services", "Financial Services", "2024", "As a senior data engineer and architect, I contributed to designing a data product capability. I played a key role in optimising and expanding the 'next best action' as a service capability.",
+  "Data Modeller Architect", "Financial Services", "2024-2025", "As a senior engineer, I conducted a data landscape assessment to align the data product capability with best practices from DAMA-DMBOK and Enterprise Data Management (EDM) frameworks. I played a key role in debugging and optimising the 'Next Best Action' as-a-service capability.",
   "AI and Data Engineer", "Education", "2024", "As a senior data consultant, I designed and implemented data solutions on Azure Synapse Analytics and Microsoft Fabric. I built a Retrieval Augmented Generation (RAG) capability using a vector database, Azure OpenAI and Python to enhance student support through data-driven insights.",
   "Data Capacity Services", "Financial Services", "2024", "As a senior data consultant, I designed and implemented a credit risk analysis process for a loan book. This project involved using R for data management and advanced analytics, yielding critical insights into the loan portfolio's performance and risk metrics.",
   "Data Capacity Services", "Policy and Advocacy", "2024", "As a senior data consultant, I created data structures that allowed researchers to analyse South Africa's property markets. I used DuckDB for data management and R for spatial analysis to generate insights across national and metropolitan areas.",
